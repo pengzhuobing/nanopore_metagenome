@@ -1,0 +1,41 @@
+samples: "config/samples.tsv"
+result_dir: "Result"
+log_dir: "Logs"
+
+qc:
+  min_length: 1000
+  min_quality: 10
+
+taxonomy:
+  bracken_read_length: 300 # depends 
+
+urate:
+  min_identity: 60
+  min_query_coverage: 70
+  min_subject_coverage: 70
+
+threads:
+  qc: 8
+  host: 24
+  taxonomy: 24
+  assembly: 48
+  mapping: 24
+  binning: 24
+  annotation: 16
+  probiotic: 24
+  cazyme: 16
+  amr: 16
+  gtdbtk: 32
+  genomad: 24
+
+references:
+  human: database/T2T-CHM13v2.0.mmi
+  probiotic_competitive: "/path/to/probiotic_competitive_reference.fa"
+  urate_proteins: "/path/to/urate_pathway_proteins.faa"
+
+databases:
+  kraken2: database/kraken2/standard_16_20260626
+  checkm2:  database/checkm2/CheckM2_database/uniref100.KO.1.dmnd
+  bakta: "/path/to/bakta_db"
+  dbcan: "/path/to/dbcan_db"
+  genomad: "/path/to/genomad_db"

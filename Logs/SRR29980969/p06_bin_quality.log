@@ -1,0 +1,12 @@
+[07/17/2026 07:27:07 PM] INFO: Running CheckM2 version 1.1.0
+[07/17/2026 07:27:07 PM] INFO: Custom database path provided for predict run. Checking database at database/checkm2/CheckM2_database/uniref100.KO.1.dmnd...
+[07/17/2026 07:27:15 PM] INFO: Running quality prediction workflow with 24 threads.
+[07/17/2026 07:27:15 PM] INFO: Calling genes in 11 bins with 24 threads:
+    Finished processing 1 of 11 (9.09%) bins.    Finished processing 2 of 11 (18.18%) bins.    Finished processing 3 of 11 (27.27%) bins.    Finished processing 4 of 11 (36.36%) bins.    Finished processing 5 of 11 (45.45%) bins.    Finished processing 6 of 11 (54.55%) bins.    Finished processing 7 of 11 (63.64%) bins.    Finished processing 8 of 11 (72.73%) bins.    Finished processing 9 of 11 (81.82%) bins.    Finished processing 10 of 11 (90.91%) bins.    Finished processing 11 of 11 (100.00%) bins.
+[07/17/2026 07:27:55 PM] INFO: Calculating metadata for 11 bins with 24 threads:
+    Finished processing 1 of 11 (9.09%) bin metadata.    Finished processing 2 of 11 (18.18%) bin metadata.    Finished processing 3 of 11 (27.27%) bin metadata.    Finished processing 4 of 11 (36.36%) bin metadata.    Finished processing 5 of 11 (45.45%) bin metadata.    Finished processing 6 of 11 (54.55%) bin metadata.    Finished processing 7 of 11 (63.64%) bin metadata.    Finished processing 8 of 11 (72.73%) bin metadata.    Finished processing 9 of 11 (81.82%) bin metadata.    Finished processing 10 of 11 (90.91%) bin metadata.    Finished processing 11 of 11 (100.00%) bin metadata.
+[07/17/2026 07:27:55 PM] INFO: Annotating input genomes with DIAMOND using 24 threads
+[07/17/2026 07:28:32 PM] INFO: Processing DIAMOND output
+[07/17/2026 07:28:32 PM] INFO: Predicting completeness and contamination using ML models.
+[07/17/2026 07:28:37 PM] INFO: Parsing all results and constructing final output table.
+[07/17/2026 07:28:37 PM] INFO: CheckM2 finished successfully.

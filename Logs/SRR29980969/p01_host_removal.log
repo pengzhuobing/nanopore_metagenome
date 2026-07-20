@@ -1,0 +1,13 @@
+[M::main::7.834*1.00] loaded/built the index for 25 target sequence(s)
+[M::mm_mapopt_update::9.271*1.00] mid_occ = 892
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 25
+[M::mm_idx_stat::10.056*1.00] distinct minimizers: 100277218 (38.70% are singletons); average occurrences: 5.856; average spacing: 5.308; total length: 3117292070
+[M::worker_pipeline::21.420*5.49] mapped 69288 sequences
+[M::worker_pipeline::30.399*7.73] mapped 83053 sequences
+[M::worker_pipeline::33.428*8.84] mapped 58395 sequences
+[M::main] Version: 2.28-r1209
+[M::main] CMD: minimap2 -ax map-ont -t 24 database/T2T-CHM13v2.0.mmi /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/qc/SRR29980969/filtered.fastq.gz
+[M::main] Real time: 33.980 sec; CPU: 295.985 sec; Peak RSS: 9.694 GB
+[bam_sort_core] merging from 0 files and 4 in-memory blocks...
+[M::bam2fq_mainloop] discarded 0 singletons
+[M::bam2fq_mainloop] processed 210736 reads

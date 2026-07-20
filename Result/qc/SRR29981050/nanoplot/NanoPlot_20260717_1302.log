@@ -1,0 +1,27 @@
+2026-07-17 13:02:05,022 NanoPlot 1.44.1 started with arguments Namespace(threads=8, verbose=False, store=False, raw=False, huge=False, outdir='/nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/qc/SRR29981050/nanoplot', no_static=False, prefix='', tsv_stats=False, only_report=False, info_in_report=False, maxlength=None, minlength=None, drop_outliers=False, downsample=None, loglength=False, percentqual=False, alength=False, minqual=None, runtime_until=None, readtype='1D', barcoded=False, no_supplementary=False, color='#4CB391', colormap='Greens', format=['png'], plots=['kde', 'dot'], legacy=None, listcolors=False, listcolormaps=False, no_N50=False, N50=False, title=None, font_scale=1, dpi=100, hide_stats=False, fastq=['../PRJNA1139951_gut_nanopore/Study/fastq/common_bean/549/SRR29981050_1.fastq.gz'], fasta=None, fastq_rich=None, fastq_minimal=None, summary=None, bam=None, ubam=None, cram=None, pickle=None, feather=None, path='/nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/qc/SRR29981050/nanoplot/')
+2026-07-17 13:02:05,022 Python version is: 3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:36:13) [GCC 12.3.0]
+2026-07-17 13:02:05,036 Nanoget: Starting to collect statistics from plain fastq file.
+2026-07-17 13:02:05,036 Nanoget: Decompressing gzipped fastq ../PRJNA1139951_gut_nanopore/Study/fastq/common_bean/549/SRR29981050_1.fastq.gz
+2026-07-17 13:06:20,629 Reduced DataFrame memory usage from 27.606403350830078Mb to 27.606403350830078Mb
+2026-07-17 13:06:20,747 Nanoget: Gathered all metrics of 1809205 reads
+2026-07-17 13:06:21,740 Calculated statistics
+2026-07-17 13:06:21,741 Using sequenced read lengths for plotting.
+2026-07-17 13:06:21,776 Removed 60 artefactual reads with very short length and very high quality.
+2026-07-17 13:06:22,908 Calculated statistics
+2026-07-17 13:06:22,909 NanoPlot:  Valid color #4CB391.
+2026-07-17 13:06:22,909 NanoPlot:  Valid colormap Greens.
+2026-07-17 13:06:22,951 NanoPlot:  Creating length plots for Read length.
+2026-07-17 13:06:22,952 NanoPlot:  Using 1809145 reads maximum of 154536bp.
+2026-07-17 13:06:24,036 Saved /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/qc/SRR29981050/nanoplot/WeightedHistogramReadlength  as png (or png for --legacy)
+2026-07-17 13:06:25,148 Saved /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/qc/SRR29981050/nanoplot/WeightedLogTransformed_HistogramReadlength  as png (or png for --legacy)
+2026-07-17 13:06:26,258 Saved /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/qc/SRR29981050/nanoplot/Non_weightedHistogramReadlength  as png (or png for --legacy)
+2026-07-17 13:06:27,315 Saved /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/qc/SRR29981050/nanoplot/Non_weightedLogTransformed_HistogramReadlength  as png (or png for --legacy)
+2026-07-17 13:06:27,317 NanoPlot: Creating yield by minimal length plot for Read length.
+2026-07-17 13:06:28,555 Saved /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/qc/SRR29981050/nanoplot/Yield_By_Length  as png (or png for --legacy)
+2026-07-17 13:06:28,557 Created length plots
+2026-07-17 13:06:28,569 NanoPlot: Creating Read lengths vs Average read quality plots using 1809145 reads.
+2026-07-17 13:06:30,006 Saved /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/qc/SRR29981050/nanoplot/LengthvsQualityScatterPlot_dot  as png (or png for --legacy)
+2026-07-17 13:06:31,275 Saved /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/qc/SRR29981050/nanoplot/LengthvsQualityScatterPlot_kde  as png (or png for --legacy)
+2026-07-17 13:06:31,277 Created LengthvsQual plot
+2026-07-17 13:06:31,277 Writing html report.
+2026-07-17 13:06:31,311 Finished!

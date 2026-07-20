@@ -1,0 +1,13 @@
+[M::mm_idx_gen::1.035*1.00] collected minimizers
+[M::mm_idx_gen::1.181*2.43] sorted minimizers
+[M::main::1.181*2.43] loaded/built the index for 809 target sequence(s)
+[M::mm_mapopt_update::1.308*2.29] mid_occ = 30
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 809
+[M::mm_idx_stat::1.378*2.22] distinct minimizers: 4799113 (85.50% are singletons); average occurrences: 1.246; average spacing: 5.354; total length: 32018646
+[M::worker_pipeline::24.503*16.29] mapped 69288 sequences
+[M::worker_pipeline::41.287*19.32] mapped 83053 sequences
+[M::worker_pipeline::50.695*19.45] mapped 58395 sequences
+[M::main] Version: 2.28-r1209
+[M::main] CMD: minimap2 -ax map-ont -t 24 /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/assembly/SRR29980969/assembly.fasta /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/host_removed/SRR29980969.nonhost.fastq.gz
+[M::main] Real time: 50.778 sec; CPU: 985.847 sec; Peak RSS: 9.962 GB
+[bam_sort_core] merging from 0 files and 4 in-memory blocks...

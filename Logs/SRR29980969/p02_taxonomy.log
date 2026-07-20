@@ -1,0 +1,23 @@
+Loading database information... done.
+210736 sequences (1340.55 Mbp) processed in 26.783s (472.1 Kseq/m, 3003.16 Mbp/m).
+  182952 sequences classified (86.82%)
+  27784 sequences unclassified (13.18%)
+ >> Checking for Valid Options...
+ >> Running Bracken 
+      >> python src/est_abundance.py -i /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/taxonomy/SRR29980969.kraken.report -o /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/taxonomy/SRR29980969.bracken.S.tsv -k database/kraken2/standard_16_20260626/database300mers.kmer_distrib -l S -t 0
+>> Checking report file: /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/taxonomy/SRR29980969.kraken.report
+PROGRAM START TIME: 07-17-2026 13:03:20
+BRACKEN SUMMARY (Kraken report: /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/taxonomy/SRR29980969.kraken.report)
+    >>> Threshold: 0 
+    >>> Number of species in sample: 1827 
+	  >> Number of species with reads > threshold: 1827 
+	  >> Number of species with reads < threshold: 0 
+    >>> Total reads in sample: 210736
+	  >> Total reads kept at species level (reads > threshold): 173610
+	  >> Total reads discarded (species reads < threshold): 0
+	  >> Reads distributed: 9220
+	  >> Reads not distributed (eg. no species above threshold): 122
+	  >> Unclassified reads: 27784
+BRACKEN OUTPUT PRODUCED: /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/taxonomy/SRR29980969.bracken.S.tsv
+PROGRAM END TIME: 07-17-2026 13:03:20
+  Bracken complete.

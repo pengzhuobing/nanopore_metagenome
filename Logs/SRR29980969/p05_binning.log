@@ -1,0 +1,44 @@
+2026-07-17 15:57:36 athena SemiBin2[1028131] INFO Running SemiBin2 version 2.3.0
+2026-07-17 15:57:36 athena SemiBin2[1028131] INFO Binning for long_read
+2026-07-17 15:57:37 athena SemiBin2[1028131] WARNING Did not detect GPU or CUDA was not installed/supported, using CPU.
+2026-07-17 15:57:37 athena SemiBin2[1028131] INFO Generating training data...
+2026-07-17 15:57:55 athena SemiBin2[1028131] INFO Calculating coverage for every sample.
+2026-07-17 15:58:29 athena SemiBin2[1028131] INFO Processed: /nas/users/bing/Projects/nanopore_longread_metagenome_pipeline_v1.0/Result/assembly/SRR29980969/reads_to_contigs.bam
+2026-07-17 15:58:29 athena SemiBin2[1028131] INFO Start training from a single sample.
+2026-07-17 15:58:29 athena SemiBin2[1028131] INFO Training model...
+  0%|          | 0/15 [00:00<?, ?it/s]  7%|▋         | 1/15 [00:27<06:25, 27.55s/it] 13%|█▎        | 2/15 [00:54<05:53, 27.22s/it] 20%|██        | 3/15 [01:20<05:22, 26.86s/it] 27%|██▋       | 4/15 [01:47<04:53, 26.66s/it] 33%|███▎      | 5/15 [02:13<04:25, 26.57s/it] 40%|████      | 6/15 [02:39<03:58, 26.46s/it] 47%|████▋     | 7/15 [03:06<03:31, 26.46s/it] 53%|█████▎    | 8/15 [03:32<03:04, 26.41s/it] 60%|██████    | 9/15 [03:59<02:38, 26.41s/it] 67%|██████▋   | 10/15 [04:25<02:12, 26.41s/it] 73%|███████▎  | 11/15 [04:51<01:45, 26.41s/it] 80%|████████  | 12/15 [05:18<01:19, 26.40s/it] 87%|████████▋ | 13/15 [05:44<00:52, 26.41s/it] 93%|█████████▎| 14/15 [06:11<00:26, 26.42s/it]100%|██████████| 15/15 [06:37<00:00, 26.45s/it]100%|██████████| 15/15 [06:37<00:00, 26.52s/it]
+2026-07-17 16:05:08 athena SemiBin2[1028131] INFO Training finished.
+2026-07-17 16:05:09 athena SemiBin2[1028131] INFO Start binning.
+2026-07-17 16:05:09 athena SemiBin2[1028131] INFO Running naive ORF finder
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+/home/bing/mambaforge/envs/semibin/lib/python3.11/site-packages/sklearn/neighbors/_base.py:241: EfficiencyWarning: Precomputed sparse input was not sorted by row values. Use the function sklearn.neighbors.sort_graph_by_row_values to sort the input by row values, with warn_when_not_sorted=False to remove this warning.
+  warnings.warn(
+2026-07-17 16:05:59 athena SemiBin2[1028131] INFO Number of bins: 11
+2026-07-17 16:05:59 athena SemiBin2[1028131] INFO Finished binning.
+If you find SemiBin useful, please cite:
+        Pan, S.; Zhu, C.; Zhao, XM.; Coelho, LP. A deep siamese neural network improves metagenome-assembled genomes in microbiome datasets across different environments. Nat Commun 13, 2326 (2022). https://doi.org/10.1038/s41467-022-29843-y
+
+        Pan, S.; Zhao, XM; Coelho, LP. SemiBin2: self-supervised contrastive learning leads to better MAGs for short- and long-read sequencing. Bioinformatics Volume 39, Issue Supplement_1, June 2023, Pages i21–i29. https://doi.org/10.1093/bioinformatics/btad209
+
+

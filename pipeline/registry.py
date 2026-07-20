@@ -1,0 +1,41 @@
+from . import (
+    p00_qc,
+    p01_host_removal,
+    p02_taxonomy,
+    p03_assembly,
+    p04_read_mapping,
+    p05_binning,
+    p06_bin_quality,
+    p06_annotation,
+    p07_urate,
+    p08_probiotic,
+    p09_cazyme,
+    p10_amr,
+    p11_gtdbtk,
+    p12_genomad,
+    p13_statistics,
+    p14_visualization,
+    p15_report,
+)
+
+STEPS = {
+    "qc": p00_qc.run,
+    "host_removal": p01_host_removal.run,
+    "taxonomy": p02_taxonomy.run,
+    "assembly": p03_assembly.run,
+    "read_mapping": p04_read_mapping.run,
+    "binning": p05_binning.run,
+    "bin_quality": p06_bin_quality.run,
+    "annotation": p06_annotation.run,
+    "urate": p07_urate.run,
+    "probiotic": p08_probiotic.run,
+    "cazyme": p09_cazyme.run,
+    "amr": p10_amr.run,
+    "gtdbtk": p11_gtdbtk.run,
+    "genomad": p12_genomad.run,
+    "statistics": p13_statistics.run,
+    "visualization": p14_visualization.run,
+    "report": p15_report.run,
+}
+
+DEFAULT_ORDER = list(STEPS)
