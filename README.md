@@ -138,7 +138,3 @@ python run.py run --samples S001 --steps assembly,read_mapping --force
 ## Important notes
 
 - External command-line tools must be installed separately.
-- Bracken output should be validated for long-read data.
-- `bins_combined` is not a final bin-refinement strategy.
-- Probiotic presence and disease-gene presence in the same sample do not prove linkage.
-- Use negative controls, product controls, and spike-in samples to define detection thresholds.
