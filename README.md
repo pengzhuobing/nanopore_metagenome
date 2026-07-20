@@ -38,9 +38,6 @@ flowchart TD
     H --> L[p10 AMR]
     G --> M[p11 GTDB-Tk]
     E --> N[p12 geNomad]
-    D --> O[p13 Statistics]
-    O --> P[p14 Visualization]
-    P --> Q[p15 Report]
 ```
 
 ## Project structure
