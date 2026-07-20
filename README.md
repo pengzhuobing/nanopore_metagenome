@@ -46,7 +46,6 @@ flowchart TD
     H --> J["p08 GTDB-Tk<br/>GTDB-Tk"]
 
     I --> K["p09 CAZyme<br/>dbCAN"]
-    I --> L["p10 AMR<br/>AMRFinderPlus / CARD"]
     I --> M["p11 Urate genes<br/>Custom database / HMM"]
 ```
 
