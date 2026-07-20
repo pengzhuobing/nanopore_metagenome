@@ -24,20 +24,47 @@ This project supports:
 ## Pipeline
 
 ```mermaid
-flowchart TD
-    A[Raw FASTQ] --> B[p00 QC]
-    B --> C[p01 Host removal]
-    C --> D[p02 Taxonomy]
-    C --> E[p03 Assembly]
-    E --> F[p04 Read mapping]
-    F --> G[p05 Binning]
-    E --> H[p06 Annotation]
-    H --> I[p07 Urate]
-    C --> J[p08 Probiotic]
-    H --> K[p09 CAZyme]
-    H --> L[p10 AMR]
-    G --> M[p11 GTDB-Tk]
-    E --> N[p12 geNomad]
+flowchart LR
+
+%% ===========================
+%% Reads-based workflow
+%% ===========================
+subgraph R["Reads-based analysis"]
+
+A[Raw Nanopore FASTQ]
+
+A --> B["p00 QC<br/>Filtlong + NanoPlot"]
+
+B --> C["p01 Host removal<br/>minimap2 + samtools"]
+
+C --> D["p02 Taxonomy<br/>Kraken2"]
+
+end
+
+%% ===========================
+%% Contig / MAG workflow
+%% ===========================
+subgraph M["Contig / MAG-based analysis"]
+
+C --> E["p03 Assembly<br/>Flye"]
+
+E --> F["p04 Read mapping<br/>minimap2"]
+
+F --> G["p05 MAG binning<br/>SemiBin2"]
+
+G --> H["p06 Bin quality<br/>CheckM2"]
+
+H --> I["p07 Genome annotation<br/>Bakta"]
+
+H --> J["p08 GTDB-Tk<br/>GTDB-Tk"]
+
+I --> K["p09 CAZyme<br/>dbCAN"]
+
+I --> L["p10 AMR<br/>AMRFinderPlus / CARD"]
+
+I --> M1["p11 Urate genes<br/>Custom database"]
+
+end
 ```
 
 ## Project structure
