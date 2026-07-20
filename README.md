@@ -24,47 +24,30 @@ This project supports:
 ## Pipeline
 
 ```mermaid
-flowchart LR
+flowchart TD
 
-%% ===========================
-%% Reads-based workflow
-%% ===========================
-subgraph R["Reads-based analysis"]
+    A["Raw FASTQ"]
+    B["p00 QC<br/>Filtlong + NanoPlot"]
+    C["p01 Host removal<br/>minimap2 + samtools"]
 
-A[Raw Nanopore FASTQ]
+    A --> B --> C
 
-A --> B["p00 QC<br/>Filtlong + NanoPlot"]
+    C --> R0["Reads-based analysis"]
+    C --> E["p03 Assembly<br/>Flye"]
 
-B --> C["p01 Host removal<br/>minimap2 + samtools"]
+    R0 --> D["p02 Taxonomy<br/>Kraken2"]
+    R0 --> R1["Optional gene abundance<br/>DIAMOND / MMseqs2"]
 
-C --> D["p02 Taxonomy<br/>Kraken2"]
+    E --> F["p04 Read mapping<br/>minimap2 + samtools"]
+    F --> G["p05 Binning<br/>SemiBin2"]
+    G --> H["p06 Bin quality<br/>CheckM2"]
 
-end
+    H --> I["p07 Annotation<br/>Bakta"]
+    H --> J["p08 GTDB-Tk<br/>GTDB-Tk"]
 
-%% ===========================
-%% Contig / MAG workflow
-%% ===========================
-subgraph M["Contig / MAG-based analysis"]
-
-C --> E["p03 Assembly<br/>Flye"]
-
-E --> F["p04 Read mapping<br/>minimap2"]
-
-F --> G["p05 MAG binning<br/>SemiBin2"]
-
-G --> H["p06 Bin quality<br/>CheckM2"]
-
-H --> I["p07 Genome annotation<br/>Bakta"]
-
-H --> J["p08 GTDB-Tk<br/>GTDB-Tk"]
-
-I --> K["p09 CAZyme<br/>dbCAN"]
-
-I --> L["p10 AMR<br/>AMRFinderPlus / CARD"]
-
-I --> M1["p11 Urate genes<br/>Custom database"]
-
-end
+    I --> K["p09 CAZyme<br/>dbCAN"]
+    I --> L["p10 AMR<br/>AMRFinderPlus / CARD"]
+    I --> M["p11 Urate genes<br/>Custom database / HMM"]
 ```
 
 ## Project structure
